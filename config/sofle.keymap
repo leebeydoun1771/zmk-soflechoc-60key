@@ -64,16 +64,16 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp ESCAPE      &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                                      &kp N6     &kp N7  &kp N8     &kp N9   &kp N0    &kp BACKSPACE
+&kp ESCAPE      &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                                      &kp N6     &kp N7  &kp N8     &kp N9   &kp N0    &mo 3
 &kp TAB         &kp Q   &kp W   &kp E   &kp R   &kp T                                       &kp Y      &kp U   &kp I      &kp O    &kp P     &kp LS(LC(LG(SEMICOLON)))
 &sl 1           &kp A   &kp S   &kp D   &kp F   &kp G                                       &kp H      &kp J   &kp K      &kp L    &kp SEMI  &sl 1
 &kp LEFT_SHIFT  &kp Z   &kp X   &kp C   &kp V   &kp B      &kp DELETE    &kp BACKSPACE      &kp N      &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                        &none   &none   &none   &kp SPACE  &sk LCTRL     &sk RIGHT_COMMAND  &kp ENTER  &none   &none      &mo 2
+                        &none   &none   &mo 2   &kp SPACE  &sk LCTRL     &sk RIGHT_COMMAND  &kp ENTER  &mo 2   &none      &none
             >;
         };
 
-        lower_layer {
-            display-name = "lower";
+        special_keys {
+            display-name = "special_keys";
 
             // TODO: Some binds are waiting for shifted keycode support.
             // ------------------------------------------------------------------------------------------------------------
@@ -92,7 +92,7 @@
             >;
         };
 
-        Meta {
+        alternate {
             // ----------------------------------------------------------------------------------------------------------------------------
             // | BTCLR  |  BT1    |  BT2    |   BT3   |   BT4   |   BT5   |                  |      |      |       |      |       |       |
             // | EXTPWR | RGB_HUD | RGB_HUI | RGB_SAD | RGB_SAI | RGB_EFF |                  |      |      |       |      |       |       |
@@ -100,13 +100,23 @@
             // |        |         |         |         |         |         | RGB_TOG | |      |      |      |       |      |       |       |
             //                    |         |         |         |         |         | |      |      |      |       |      |
 
-            display-name = "Meta";
+            display-name = "alternate";
             bindings = <
-&none  &none  &none  &none  &none  &none                           &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &studio_unlock                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                           &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none           &none    &none  &none  &none  &none  &none  &none  &none
-              &none  &none  &none  &none           &none    &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                   &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &trans                  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                   &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none   &none    &none  &none  &none  &none  &none  &none  &none
+              &none  &none  &none  &none   &none    &none  &none  &none  &none  &none
+            >;
+        };
+
+        applications {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &studio_unlock                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans          &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
