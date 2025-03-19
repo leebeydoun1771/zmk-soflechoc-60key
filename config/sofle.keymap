@@ -84,10 +84,10 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans       &kp LS(LC(LA(NUMBER_1)))  &kp LA(LC(LS(NUMBER_2)))  &kp LS(LA(LC(NUMBER_3)))  &kp LS(LC(LG(NUMBER_4)))  &kp LS(LG(F5))                               &kp K_MUTE             &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp LS(LA(LC(N9)))  &kp LS(LA(LC(N0)))  &trans
-&kp PAGE_UP  &kp LS(BACKSLASH)         &kp LEFT_BRACKET          &kp LS(N9)                &kp LS(LEFT_BRACKET)      &kp LS(LC(LG(SEMICOLON)))                    &kp LS(RIGHT_BRACKET)  &kp LS(EQUAL)    &kp LS(GRAVE)      &kp LS(N0)          &kp LS(N5)          &kp PAGE_DOWN
-&trans       &kp LS(APOS)              &kp NON_US_BACKSLASH      &kp LS(NUMBER_4)          &kp LS(NUMBER_2)          &kp LS(MINUS)                                &kp LEFT               &kp DOWN         &kp UP_ARROW       &kp RIGHT_ARROW     &kp EQUAL           &trans
-&kp HOME     &kp LS(N7)                &kp NON_US_HASH           &kp LS(NUMBER_1)          &kp APOS                  &trans                     &trans    &trans  &kp RIGHT_BRACKET      &kp MINUS        &kp LS(NUMBER_6)   &kp LS(N8)          &kp GRAVE           &kp END
+&trans       &kp LS(LC(LA(NUMBER_1)))  &kp LA(LC(LS(NUMBER_2)))  &kp LS(LA(LC(NUMBER_3)))  &kp LS(LC(LG(NUMBER_4)))  &kp LS(LG(F5))                               &kp K_MUTE             &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp LS(LA(LC(N9)))  &kp LS(LA(LC(N0)))    &trans
+&kp PAGE_UP  &kp LS(BACKSLASH)         &kp LEFT_BRACKET          &kp LS(N9)                &kp LS(LEFT_BRACKET)      &kp LS(LC(LG(SEMICOLON)))                    &kp LS(RIGHT_BRACKET)  &kp LS(EQUAL)    &kp LS(GRAVE)      &kp LS(N0)          &kp LS(N5)            &kp PAGE_DOWN
+&trans       &kp LS(APOS)              &kp GRAVE                 &kp LS(NUMBER_4)          &kp LS(NUMBER_2)          &kp LS(MINUS)                                &kp LEFT               &kp DOWN         &kp UP_ARROW       &kp RIGHT_ARROW     &kp EQUAL             &trans
+&kp HOME     &kp LS(N7)                &kp NON_US_HASH           &kp LS(NUMBER_1)          &kp APOS                  &trans                     &trans    &trans  &kp RIGHT_BRACKET      &kp MINUS        &kp LS(NUMBER_6)   &kp LS(N8)          &kp NON_US_BACKSLASH  &kp END
                                        &trans                    &trans                    &trans                    &trans                     &trans    &trans  &trans                 &trans           &trans             &trans
             >;
         };
